@@ -1,29 +1,29 @@
-document.write("zadání příkladu:")
-let a = document.getElementById("a").value;
+function computeArea() {
+  // získání vstupní hodnoty z textového pole
+  var sideLength = document.getElementById("side-length").value;
+  
+  // výpočet obsahu čtverce
+  var area = sideLength * sideLength;
+  
+  // výstup výsledku
+  document.getElementById("output").innerHTML = "Obsah čtverce je: " + area;
+}
 
-
-
-
-function vypocetObsahuCtverce(a) {
-    var obsah = a * a;
-    return obsah;
+function kontrola() {
+  // získání vstupní hodnoty z textového pole
+  var kontrola = document.getElementById("kontrola").value;
+  var sideLength2 = document.getElementById("side-length").value;
+  
+  // výpočet obsahu čtverce
+  var area2 = sideLength2 * sideLength2;
+  
+  // výstup výsledku
+  
+  if (kontrola == area2) {
+    document.getElementById("vysledek_kontroly").innerHTML = "Správně!";
+    
+  } else{
+    document.getElementById("vysledek_kontroly").innerHTML = "Zkus to znova!";
   }
+}
 
-var obsah = vypocetObsahuCtverce(a);
-
-console.log("Obsah ctverce se stranou " + a + " je " + obsah + " cm^2.");
-
-
-
-
-// Získání vstupní hodnoty od uživatele
-let strana = prompt("Zadej délku strany čtverce:");
-
-// Převod vstupní hodnoty na číslo
-strana = parseFloat(strana);
-
-// Výpočet obsahu čtverce
-let obsah = strana * strana;
-
-// Vypsání výsledku
-console.log("Obsah čtverce o délce strany " + strana + " je " + obsah);

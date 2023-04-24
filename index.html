@@ -18,47 +18,33 @@
             <section>
                 <p>
                     Jelikož má čtverec všechny strany stejně dlouhé, stačí nám pro výpočet jeho obsahu znalost délky jedné jeho strany. Pro výpočet obsahu čtverce tedy do kalkulačky zadejte délku strany čtverce a. Obsah čtverce se spočítá jako délka strany a krát délka strany a.
-                </p>            
+                </p>  
+                <h1>Výpočet obsahu čtverce</h1>
+  
+                <p>
+                  <label for="side-length">Zadejte délku strany:</label>
+                <input type="number" id="side-length">
+                <button onclick="computeArea()">Spočítat</button>
+                </p>
+                
+                <p>
+                  <label for="side-length2">Zkontrolovat výsledek:</label>
+                <input type="number" id="kontrola">
+                <button onclick="kontrola()">kontrola</button>
+                </p>
+                <!-- <button onclick="computeArea()">Spočítat</button>
+                <button onclick="kontrola()">kontrola</button> -->
+                  
+                <p id="output"></p>   
+                <p id="vysledek_kontroly"></p> 
+                
+                <p><a href="nápověda.html">Nápověda</a></p>
+            </section>
+        </div>
+    </article>      
 </body>
 </html>
 
 
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Výpočet obsahu čtverce</title>
-  <script>
-    function computeArea() {
-      // získání vstupní hodnoty z textového pole
-      var sideLength = document.getElementById("side-length").value;
-      
-      // výpočet obsahu čtverce
-      var area = sideLength * sideLength;
-      
-      // výstup výsledku
-      document.getElementById("output").innerHTML = "Obsah čtverce je: " + area;
-    }
-  </script>
-</head>
-<body>
-  <h1>Výpočet obsahu čtverce</h1>
-  
-  <label for="side-length">Zadejte délku strany:</label>
-  <input type="number" id="side-length">
-  
-  <button onclick="computeArea()">Spočítat</button>
-  
-    
-  <p id="output"></p>
-  
-</body>
-</html>
-
-
-<script src="výpočet.JS"></script>
-<p><a href="nápověda.html">Nápověda</a></p>
 
 
